@@ -16,5 +16,5 @@ try:
 except Exception as error:
     LOGGER(__name__).info("No sudo user(s) mentioned in config.")
 
-SUDO_USERID = list(set(SUDO_USERID))
+SUDO_USERID = OWNER_USERID
 MONGO_URI = getenv("MONGO_URI")
