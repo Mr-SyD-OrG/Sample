@@ -9,7 +9,7 @@ API_HASH = getenv("API_HASH")
 BOT_TOKEN = getenv("BOT_TOKEN")
 
 OWNER_USERID = json.loads(getenv("OWNER_USERID"))
-SUDO_USERID = OWNER_USERID.copy()
+SUDO_USERID = OWNER_USERID
 
 try:
     SUDO_USERID += json.loads(getenv("SUDO_USERID"))
